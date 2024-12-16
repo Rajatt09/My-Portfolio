@@ -1,0 +1,14 @@
+.container {
+  max-width: 1280px; /* Equivalent to Tailwind's max-w-7xl */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem; /* Equivalent to Tailwind's px-4 */
+  padding-right: 1rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-left: 5rem; /* Equivalent to Tailwind's md:px-20 */
+    padding-right: 5rem;
+  }
+}

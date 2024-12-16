@@ -1,0 +1,84 @@
+/* Home Page Styles */
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.home-content {
+  color: white;
+}
+
+.title-section {
+  position: relative;
+}
+
+.green-box {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  height: 60px; /* Adjust the height of the green box */
+  background-color: #39dfaa; /* Green color */
+  width: 200px; /* Starting width */
+  transform-origin: left center;
+  animation: scaleAndShrink 3s infinite ease-in-out; /* Infinite loop */
+}
+
+@keyframes scaleAndShrink {
+  0% {
+    transform: scaleX(0); /* Initially scaled down */
+  }
+  50% {
+    transform: scaleX(1); /* Fully expanded */
+  }
+  100% {
+    transform: scaleX(0); /* Shrinks back */
+  }
+}
+
+.hero-about-me {
+  font-size: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.home-developer-title {
+  font-size: 4rem;
+  /* margin-bottom: 10px; */
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+/* .home-title-line {
+  width: 250px;
+  height: 2px;
+  margin-left: 20px;
+  margin-top: 30px;
+  background: gray;
+  transform-origin: left center;
+  animation: scaleBox 3s ease-in-out 1 forwards;
+  animation-delay: 2s;
+} */
+
+@keyframes scaleBox {
+  0% {
+    transform: scaleX(0);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+@media (max-width: 768px) {
+  .home-developer-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-about-me {
+    font-size: 1rem;
+    margin: 1rem 0 0 0;
+  }
+}

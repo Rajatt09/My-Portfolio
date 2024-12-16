@@ -1,0 +1,30 @@
+/* Container for the section */
+.projects-section {
+  min-height: 100vh;
+  padding-top: 5rem; /* To match the height of a header */
+  padding-bottom: 5rem;
+  background-color: #f7f7f7; /* Light gray background */
+}
+
+/* Main container for projects */
+.projects-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Title of the section */
+.projects-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #333;
+}
+
+/* Grid for the projects */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}

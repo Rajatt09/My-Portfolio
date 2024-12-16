@@ -1,0 +1,131 @@
+/* Base Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "Whyte Inktrap";
+  src: local("Whyte Inktrap Super"), local("Whyte-Inktrap-Super"),
+    url("./assets/fonts/WhyteInktrap-Super.woff2") format("woff2"),
+    url("./assets/fonts/WhyteInktrap-Super.woff") format("woff"),
+    url("./assets/fonts/WhyteInktrap-Super.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.lottie-player1 {
+  height: 40rem;
+  opacity: 0.5;
+  /* width: 20px; */
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  transform: scaleX(-1);
+}
+
+@media (max-width: 468px) {
+  .lottie-player1 {
+    height: 40rem;
+    opacity: 0.4;
+
+    top: -60px;
+    right: 0;
+  }
+}
+:root {
+  --cursor-size: 20px;
+}
+
+body {
+  font-family: system-ui, sans-serif; /* Antialiased fallback */
+  cursor: none;
+  background-color: #111111;
+}
+
+::selection {
+  background-color: rgba(255, 255, 255, 0.2); /* Adjust for light theme */
+}
+
+/* Dark mode customizations */
+body.dark ::selection {
+  background-color: rgba(255, 255, 255, 0.2); /* Adjust for dark theme */
+}
+
+/* Components */
+.custom-cursor {
+  width: var(--cursor-size);
+  height: var(--cursor-size);
+  position: fixed;
+  pointer-events: none;
+  z-index: 50;
+  border-radius: 50%;
+  mix-blend-mode: difference;
+  transform: translate(-50%, -50%);
+}
+
+.nav-link {
+  position: relative;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem; /* text-sm */
+  font-weight: 500; /* font-medium */
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: var(--primary-light); /* Light theme color */
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0.125rem; /* 0.5px */
+  background-color: var(--primary-light); /* Light theme color */
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Terminal window styles */
+.terminal-window {
+  background-color: #1f1f1f; /* terminal background */
+  color: #dcdcdc; /* terminal text */
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.terminal-header {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: #2d2d2d; /* dark gray */
+}
+
+.window-button {
+  width: 0.75rem; /* 3px */
+  height: 0.75rem; /* 3px */
+  border-radius: 50%;
+  margin: 0 0.25rem; /* 1px */
+}
+
+/* Hide scrollbar */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none; /* For IE and Edge */
+  scrollbar-width: none; /* For Firefox */
+}
