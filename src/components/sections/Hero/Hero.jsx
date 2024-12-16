@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import Container from "../../common/container/Container";
+import Container from "../../common/Container/Container";
 import HeroText from "./HeroText";
 import "./Hero.css";
 import Skills from "../Skills/Skills";
