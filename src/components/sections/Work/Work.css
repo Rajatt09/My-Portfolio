@@ -15,7 +15,7 @@
 }
 
 .project-card-column {
-  padding: 0%;
+  padding: 2%;
 }
 
 @media (min-width: 768px) {
@@ -31,6 +31,9 @@
 
   .work-section {
     padding-bottom: 5rem;
+  }
+  .project-card-column {
+    padding: 0%;
   }
 
   .project-card-column {
