@@ -16,6 +16,7 @@
     opacity: 1;
   }
 }
+
 .page-transition {
   position: relative;
   width: 100%;
@@ -29,10 +30,15 @@
   left: 0;
   height: 100%;
   /* background-color: #388e3c; */
-  background-color: #aad0e3;
+  /* background-color: #aad0e3; */
+  background: linear-gradient(
+    to right,
+    rgba(17, 17, 17, 0.6) 0%,
+    /* transparent 40%, */ rgba(170, 208, 227, 0.6) 100%
+  );
   z-index: 10;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
-  animation: slideInOut 1.8s ease-in-out forwards;
+  animation: slideInOut 1.9s ease-in-out forwards;
 }
 
 @keyframes slideInOut {

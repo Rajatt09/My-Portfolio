@@ -6,6 +6,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import CustomCursor from "../../common/Effects/HoverCursor";
 
 const ProjectCard = ({
   id,
@@ -27,6 +28,7 @@ const ProjectCard = ({
       transition={{ duration: 0.6, delay: index * 0.2 }}
       viewport={{ once: true }}
     >
+      <CustomCursor text="View Project" />
       <div className="image-container" style={{ backgroundColor: "black" }}>
         <ContinuousScript text={text} />
         {/* <img src={image} alt={title} /> */}

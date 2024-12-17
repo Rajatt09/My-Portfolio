@@ -44,6 +44,27 @@ html {
   --swiper-navigation-size: 1.5rem !important;
 }
 
+::-webkit-scrollbar-track {
+  border: none;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #aad0e3;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar:horizontal {
+  height: 0;
+  width: 0;
+  display: none;
+}
+
 body {
   /* font-family: system-ui, sans-serif; */
   /* cursor: none; */
