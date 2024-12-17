@@ -29,7 +29,7 @@
   cursor: pointer;
   text-align: center;
   display: inline-block;
-  font-family: "Kanit", serif;
+  /* font-family: "Kanit", serif; */
   font-weight: 300;
   font-style: normal;
 }
@@ -120,7 +120,7 @@
   .skills {
     text-align: center;
     padding-left: 0;
-    margin-top: 3.5rem !important;
+    margin-top: 6.5rem !important;
   }
 
   .skills h3 {
@@ -130,7 +130,7 @@
   .skill-container-tag {
     padding: 0.6rem 1.2rem;
     font-size: 0.9rem;
-    margin: 0.2rem;
+    margin: 0 0.2rem;
   }
 
   .skill-circular-left,
@@ -147,12 +147,17 @@
     left: 0.05rem !important;
   }
 
+  .skill-tag-right {
+    margin-top: 5px;
+  }
+
   .lower-skill {
-    padding: 1rem;
+    padding-top: 0.2rem;
+    gap: 0;
   }
 
   .font1-tag {
-    margin-top: 1.4rem;
+    margin-top: 0.3rem;
   }
 }
 

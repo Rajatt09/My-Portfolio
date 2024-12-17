@@ -23,7 +23,7 @@ function Skills() {
       viewport={{ once: true }}
       className="skills"
     >
-      <h2>th my skills in:</h2>
+      <h2>Skills That Define Me:</h2>
       <div className="skills-container-section">
         <span className={`skill-container-tag skill-tag-left `}>Bootstrap</span>
         <span

@@ -14,7 +14,7 @@ const Timeline = () => {
     },
     {
       year: "11/2024",
-      name: "JIIT-OPTICA-Forms",
+      name: "JIIT OPTICA Forms",
       type: "Live Preview",
       tag: "OPTICA'S own custom forms",
       link: "https://github.com/jiitopticachapter/JIIT-OPTICA-Forms",
@@ -23,9 +23,9 @@ const Timeline = () => {
     },
     {
       year: "09/2024",
-      name: "WhatsappMsg-GMail Sender",
+      name: "Msg-GMail Sender",
       type: "Source Code",
-      // tag: "hello",
+      tag: "Bulk whatsappMsg-mail sending",
       link: "https://github.com/Rajatt09/whatsapp-Message-mail-sender",
       background: "#92d6c1",
       color: "#111111",
@@ -123,7 +123,7 @@ const Timeline = () => {
             </div>
             <div className="timeline-wrapper-box">
               <div className="timeline-name" style={{ textAlign: "center" }}>
-                <span>
+                <span className="t-heading">
                   {project.name} <br />
                   <span
                     style={{

@@ -41,12 +41,14 @@ html {
 }
 :root {
   --cursor-size: 20px;
+  --swiper-navigation-size: 1.5rem !important;
 }
 
 body {
-  font-family: system-ui, sans-serif; /* Antialiased fallback */
-  cursor: none;
+  /* font-family: system-ui, sans-serif; */
+  /* cursor: none; */
   background-color: #111111;
+  font-family: "Kanit", serif;
 }
 
 ::selection {

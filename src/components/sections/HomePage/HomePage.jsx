@@ -23,7 +23,7 @@ function Home() {
           <RotatingText />
           <div className="hero-about-me">
             {" "}
-            who loves building cool, impactful web solutions and exploring
+            Who loves building cool, impactful web solutions and exploring
             creative tech ideas.
           </div>
         </div>

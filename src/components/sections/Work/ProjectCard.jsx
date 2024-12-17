@@ -1,13 +1,18 @@
 import { motion } from "framer-motion";
 import "./ProjectCard.css";
 import ContinuousScript from "../../common/Effects/ContinuousText";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
 const ProjectCard = ({
   id,
   title,
   subtitle,
   tags,
-  image,
+  images,
   stats,
   index,
   text,
@@ -24,7 +29,25 @@ const ProjectCard = ({
     >
       <div className="image-container" style={{ backgroundColor: "black" }}>
         <ContinuousScript text={text} />
-        <img src={image} alt={title} />
+        {/* <img src={image} alt={title} /> */}
+        {images.length == 1 ? (
+          <img src={images[0]} alt={title} />
+        ) : (
+          <Swiper
+            modules={[Navigation, Pagination, Autoplay]}
+            navigation
+            pagination={{ clickable: true }}
+            autoplay={{ delay: 3000 }}
+            loop={true}
+            className="project-carousel"
+          >
+            {images.map((img, i) => (
+              <SwiperSlide key={i}>
+                <img src={img} alt={`${title} - slide ${i + 1}`} />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        )}
 
         <div className="button-container">
           <a href={website} target="_blank">
@@ -62,15 +85,17 @@ const ProjectCard = ({
           ))}
         </div>
 
-        <a href={github} target="_blank">
-          <motion.button
-            className="view-button"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            View Source Code
-          </motion.button>
-        </a>
+        <div style={{ textAlign: "right" }}>
+          <a href={github} target="_blank">
+            <motion.button
+              className="view-button"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              View Source Code
+            </motion.button>
+          </a>
+        </div>
       </div>
     </motion.article>
   );

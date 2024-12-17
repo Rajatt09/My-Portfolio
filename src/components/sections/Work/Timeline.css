@@ -18,7 +18,7 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  font-family: "Kanit", serif;
+  /* font-family: "Kanit", serif; */
   font-weight: 200;
   font-style: normal;
 }
@@ -71,7 +71,7 @@
 .timeline-button {
   padding: 0.5rem 1.5rem;
   border-radius: 9999px;
-  background-color: #a5d8c8;
+  background-color: #92d6c1;
   color: #111111;
   font-size: 1rem;
   font-weight: bold;
@@ -100,8 +100,13 @@
 
 @media (max-width: 768px) {
   .timeline-container {
-    margin-top: 6rem;
+    margin-top: 3rem;
     padding: 0 0.5rem;
+  }
+  .t-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
   }
   .timeline-wrapper-box {
     display: flex;
@@ -114,14 +119,14 @@
 
   .timeline-title {
     font-size: 3rem;
-    margin-bottom: 3rem;
+    margin-bottom: 0rem;
   }
 
   .timeline-list {
     display: flex;
     flex-direction: column;
     gap: 0rem;
-    font-family: "Kanit", serif;
+    /* font-family: "Kanit", serif; */
     font-weight: 200;
     font-style: normal;
   }

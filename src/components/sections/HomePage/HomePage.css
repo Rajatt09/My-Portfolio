@@ -49,6 +49,7 @@
   display: flex;
   align-items: center;
   gap: 0;
+  font-family: "Whyte Inktrap", sans-serif;
 }
 
 /* .home-title-line {
@@ -79,6 +80,6 @@
 
   .hero-about-me {
     font-size: 1rem;
-    margin: 1rem 0 0 0;
+    margin: 0;
   }
 }

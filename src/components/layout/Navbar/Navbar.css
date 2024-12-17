@@ -5,12 +5,12 @@
   left: 0;
   width: 100%;
   z-index: 5;
-  font-family: "Kanit", serif;
+  /* font-family: "Kanit", serif; */
   transition: background-color 0.4s ease, backdrop-filter 0.4s ease;
 }
 
 .nabar-logo {
-  font-family: "Kanit", serif;
+  /* font-family: "Kanit", serif; */
   z-index: 5;
 }
 
@@ -104,6 +104,8 @@
   z-index: 1;
   /* overflow: hidden; */
   transition: height 0.4s ease-in-out, opacity 0.4s ease-in-out 0.2s;
+  backdrop-filter: blur(10px) saturate(180%);
+  -webkit-backdrop-filter: blur(10px) saturate(180%);
 }
 
 .mobile-nav-links {
@@ -157,5 +159,9 @@
 
   .hamburger {
     display: flex;
+  }
+  .navbar-logo {
+    font-size: 1.1rem;
+    /* font-weight: bold; */
   }
 }

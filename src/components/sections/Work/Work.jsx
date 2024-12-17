@@ -6,7 +6,14 @@ import { text } from "framer-motion/client";
 import cropcartel from "../../../assets/images/cropcartel.png";
 import dulitfest from "../../../assets/images/dulitfest.png";
 import collaber from "../../../assets/images/collaber.png";
+import collaber2 from "../../../assets/images/collaber2.png";
+import collaber3 from "../../../assets/images/collaber3.png";
+import collaber4 from "../../../assets/images/collaber4.png";
+import collaber5 from "../../../assets/images/collaber5.png";
 import opticaforms from "../../../assets/images/opticaforms.png";
+import opticaforms2 from "../../../assets/images/opticaforms2.png";
+import opticaforms3 from "../../../assets/images/opticaforms3.png";
+import opticaforms4 from "../../../assets/images/opticaforms4.png";
 
 const Work = () => {
   const projects = [
@@ -16,7 +23,7 @@ const Work = () => {
       subtitle:
         "Collaborate in real-time with video calls and chat features, whiteboard",
       tags: ["React", "WebRTC", "Socket.io", "Fabric.js", "GoogleOAuth"],
-      image: collaber,
+      images: [collaber, collaber2, collaber3, collaber4, collaber5],
       website: "https://collab-lime.vercel.app/",
       github: "https://github.com/Rajatt09/Collaber",
       year: "2022 - 2024",
@@ -26,9 +33,10 @@ const Work = () => {
       id: "04",
       title: "JIIT OPTICA Forms",
       subtitle:
-        "customizable forms offering easy configuration using simple json file, seamless data integration with Google Sheets, and multiple unique themes for an engaging user experience.",
+        "Customizable forms offering easy configuration using simple json file, seamless data integration with Google Sheets, and multiple unique themes for an engaging user experience",
       tags: ["React", "Styled-Components"],
       image: opticaforms,
+      images: [opticaforms, opticaforms2, opticaforms3, opticaforms4],
       website: "https://forms.jiitopticachapter.com/",
       github: "https://github.com/jiitopticachapter/JIIT-OPTICA-Forms",
       text: "4 min Read",
@@ -37,11 +45,12 @@ const Work = () => {
       id: "02",
       title: "DU LITFEST",
       subtitle:
-        "Delhi University Literature Festival website managed around 5000 registrations",
+        "Delhi University Literature Festival website managed around 10k registrations",
       tags: ["React", "Firebase", "GoogleSheet Api", "Framer Motion"],
       github: "https://github.com/HarshSharma20503/DuLitFest",
       website: "https://dulitfest.org/",
       image: dulitfest,
+      images: [dulitfest],
       text: "4 min Read",
     },
     {
@@ -53,6 +62,7 @@ const Work = () => {
       github: "https://github.com/Rajatt09/CropCartel",
       website: "https://cropcartel.onrender.com/",
       image: cropcartel,
+      images: [cropcartel],
       text: "5 min Read",
     },
   ];

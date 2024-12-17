@@ -26,7 +26,11 @@
 
 @media (max-width: 768px) {
   .work-title {
-    font-size: 2.5rem !important;
+    font-size: 2.7rem !important;
+  }
+
+  .work-section {
+    padding-bottom: 5rem;
   }
 
   .project-card-column {

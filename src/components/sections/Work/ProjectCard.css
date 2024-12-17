@@ -19,27 +19,36 @@
   height: 100%;
   object-fit: cover;
 }
-
 .project-card .button-container {
   position: absolute;
-  bottom: 1.5rem;
-  right: 1.5rem;
+  bottom: 1rem;
+  right: 1rem;
   display: flex;
   gap: 1rem;
+  z-index: 2;
 }
 
 .project-card .button {
-  padding: 0.5rem 1rem;
-  border-radius: 9999px;
-  background-color: #39dfaa;
-  font-size: 0.875rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 50px;
   border: none;
-  display: flex;
-  align-items: baseline;
-  backdrop-filter: blur(16px) saturate(180%);
-  -webkit-backdrop-filter: blur(16px) saturate(180%);
-  background-color: #8bb5df;
-  color: white;
+  color: #111111;
+  /* background: linear-gradient(90deg, #39dfaa, #2ea880); */
+  background-color: #92d6c1;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.project-card .button:hover {
+  background: linear-gradient(90deg, #2ea880, #39dfaa);
+  transform: scale(1.05);
+}
+
+.project-card .button:active {
+  transform: scale(0.95);
 }
 
 .project-card .stats {
@@ -74,9 +83,59 @@
   opacity: 0.8;
 }
 
+.project-card .project-carousel {
+  width: 100%;
+  height: 100%;
+  /* position: relative; */
+}
+
+.project-card .project-carousel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-card .swiper-pagination-bullet-active {
+  background-color: #111111;
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.project-card .swiper-button-next,
+.project-card .swiper-button-prev {
+  color: #111111;
+  /* background-color: #aad0e3;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px; */
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+  top: auto;
+  bottom: 1rem;
+  z-index: 3;
+}
+
+.project-card .swiper-button-prev {
+  left: 0.8rem;
+  right: auto;
+}
+
+.project-card .swiper-button-next {
+  left: 3rem;
+  right: auto;
+}
+
+.project-card .swiper-button-next:hover,
+.project-card .swiper-button-prev:hover {
+  transform: scale(1.2);
+}
+
 .project-card .content {
   padding: 1.5rem;
-  font-family: "Kanit", serif;
+  /* font-family: "Kanit", serif; */
   font-weight: 300;
   font-style: normal;
   color: #ffffff;
@@ -110,29 +169,23 @@
 .project-card .tag {
   font-size: 0.875rem;
 }
-
 .project-card .view-button {
   margin-top: 1.5rem;
   padding: 0.75rem 1.5rem;
   border-radius: 9999px;
-  background-color: #aad0e3;
+  border: none;
   color: #111111;
+  background-color: #aad0e3;
+  /* background: linear-gradient(90deg, #3d84b8, #1f4e78); */
   font-size: 1rem;
   font-weight: bold;
-  position: absolute;
-  right: 1.2rem;
-  bottom: 1.2rem;
-  border: none;
   cursor: pointer;
-  transition: transform 0.1s ease-in-out;
-  font-family: "Kanit", serif;
-  font-weight: 300;
-  font-style: normal;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .project-card .view-button:hover {
   transform: scale(1.05);
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .project-card .view-button:active {
@@ -156,14 +209,26 @@
 }
 
 @media (max-width: 768px) {
-  .view-button {
-    position: relative !important;
-    right: -48% !important;
-    bottom: 0px !important;
+  project-card .view-button {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
+
+  .line {
+    font-size: 2rem !important;
   }
 
   .project-card .case-study-label {
     font-size: 0.7rem;
+  }
+
+  .project-card .button {
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
   }
 
   .project-card .title {
@@ -177,6 +242,6 @@
   }
 
   .project-card .tag {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
   }
 }
