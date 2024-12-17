@@ -22,7 +22,7 @@ const Work = () => {
       title: "Collaber ",
       subtitle:
         "Collaborate in real-time with video calls and chat features, whiteboard",
-      tags: ["React", "WebRTC", "Socket.io", "Fabric.js", "GoogleOAuth"],
+      tags: ["WebRTC", "Socket.io", "Fabric.js", "GoogleOAuth"],
       images: [collaber, collaber2, collaber3, collaber4, collaber5],
       website: "https://collab-lime.vercel.app/",
       github: "https://github.com/Rajatt09/Collaber",
