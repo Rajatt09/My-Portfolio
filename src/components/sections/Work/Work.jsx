@@ -14,6 +14,7 @@ import opticaforms from "../../../assets/images/opticaforms.png";
 import opticaforms2 from "../../../assets/images/opticaforms2.png";
 import opticaforms3 from "../../../assets/images/opticaforms3.png";
 import opticaforms4 from "../../../assets/images/opticaforms4.png";
+import GithubChart from "../Chart/GithubChart";
 
 const Work = () => {
   const projects = [
@@ -33,7 +34,7 @@ const Work = () => {
       id: "04",
       title: "JIIT OPTICA Forms",
       subtitle:
-        "Customizable forms offering easy configuration using simple json file, seamless data integration with Google Sheets, and multiple unique themes for an engaging user experience",
+        "Customizable forms offering easy configuration using json file, data integration with Google Sheets",
       tags: ["React", "Styled-Components"],
       image: opticaforms,
       images: [opticaforms, opticaforms2, opticaforms3, opticaforms4],
@@ -81,10 +82,10 @@ const Work = () => {
         </motion.h2>
 
         <div className="project-card-container">
-          {/* {projects.map((project, index) => (
+          {projects.map((project, index) => (
             <ProjectCard key={project.id} {...project} index={index} />
-          ))} */}
-          <ProjectCard {...projects[0]} />
+          ))}
+          {/* <ProjectCard {...projects[0]} />
 
           <div className="project-card-column">
             <div className="project-card-column-1">
@@ -95,8 +96,10 @@ const Work = () => {
             </div>
           </div>
 
-          <ProjectCard {...projects[1]} />
+          <ProjectCard {...projects[1]} /> */}
         </div>
+
+        <GithubChart />
 
         <div className="timeline-container">
           <Timeline />

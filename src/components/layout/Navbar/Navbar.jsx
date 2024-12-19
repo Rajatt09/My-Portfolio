@@ -58,13 +58,18 @@ const Navbar = () => {
     >
       <div className="container">
         {/* Logo */}
-        <NavLink
+        <p
           to="/"
           className="navbar-logo"
-          style={{ position: "relative", zIndex: "5" }}
+          style={{
+            position: "relative",
+            zIndex: "5",
+            color: "#FFFFFF",
+            cursor: "default",
+          }}
         >
           RAJAT BHATI
-        </NavLink>
+        </p>
 
         {/* Hamburger Icon */}
         <button

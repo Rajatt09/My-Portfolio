@@ -1,0 +1,26 @@
+.githubchart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+  overflow-x: auto;
+  padding: 1rem;
+}
+
+.github-title {
+  font-size: 4rem;
+  margin: 4rem 4% 3rem 4%;
+  color: #ffffff;
+  font-family: "Whyte Inktrap", sans-serif;
+}
+
+@media (max-width: 768px) {
+  .github-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .githubchart {
+    padding: 0.5rem;
+  }
+}

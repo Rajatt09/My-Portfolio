@@ -46,8 +46,11 @@
 
 .project-card-container {
   display: flex;
-  flex-direction: column;
-  /* gap: 0rem; */
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* flex-direction: column; */
+  /* gap: -100rem; */
+  margin: 0 4%;
 }
 
 .project-card-column {
