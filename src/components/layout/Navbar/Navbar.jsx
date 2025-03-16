@@ -94,7 +94,7 @@ const Navbar = () => {
           <a
             className="nav-link"
             href="../../../assets/Resume.pdf"
-            download="Resume.pdf"
+            download="Rajat Bhati.pdf"
           >
             <FaDownload /> &nbsp; RESUME
           </a>
