@@ -99,7 +99,7 @@ const Work = () => {
           <ProjectCard {...projects[1]} /> */}
         </div>
 
-        <GithubChart />
+        {/* <GithubChart /> */}
 
         <div className="timeline-container">
           <Timeline />
