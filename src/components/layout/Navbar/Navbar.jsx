@@ -91,7 +91,11 @@ const Navbar = () => {
         </div>
 
         <div className="nav-social-links">
-          <a className="nav-link" href="/Resume.pdf" download="Rajat Bhati.pdf">
+          <a
+            className="nav-link"
+            href="/Rajat Bhati.pdf"
+            download="Rajat Bhati.pdf"
+          >
             <FaDownload /> &nbsp; RESUME
           </a>
           {socialLinks.map((link) => (
